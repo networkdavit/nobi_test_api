@@ -8,8 +8,10 @@ Bundler.require(*Rails.groups)
 
 module NobiApiTest
   class Application < Rails::Application
+    config.eager_load_paths << Rails.root.join('lib')
+    config.autoload_paths << Rails.root.join('lib')
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0  and config.autoloader = :classic
+    config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
     #

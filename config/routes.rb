@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   resources :rules, only: [:index, :create, :show]
   resources :amenities, only: [:index, :create]
   resources :setting_places, only: [:index, :create]
-  resources :users
+  resources :users, param: :_username
   post '/auth/login', to: 'authentication#login'
+  get '/*a', to: 'application#not_found'
 
 end

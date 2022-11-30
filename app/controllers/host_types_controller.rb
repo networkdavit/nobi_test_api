@@ -1,5 +1,5 @@
 class HostTypesController < ApplicationController
-
+    before_action :authorize_request, except: :login
     def index
         @hosts = HostType.all
         render json: @hosts
