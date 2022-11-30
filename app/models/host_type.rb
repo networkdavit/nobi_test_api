@@ -1,0 +1,2 @@
+class HostType < ApplicationRecord
+end

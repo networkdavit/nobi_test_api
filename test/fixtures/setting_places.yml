@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rooms: 1
+  guests: 1
+  bathrooms: 1
+  totalNumberOfType: 1
+  price: 1
+  singleBed: 1
+  doubleBed: 1
+  kingsizeBed: 1
+  sofa: 1
+
+two:
+  rooms: 1
+  guests: 1
+  bathrooms: 1
+  totalNumberOfType: 1
+  price: 1
+  singleBed: 1
+  doubleBed: 1
+  kingsizeBed: 1
+  sofa: 1
