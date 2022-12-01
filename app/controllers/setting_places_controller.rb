@@ -7,7 +7,7 @@ class SettingPlacesController < ApplicationController
 
 
     def create 
-        @setting_place = Amenity.create(
+        @setting_place = SettingPlace.create(
             rooms:params[:rooms],
             guests:params[:guests],
             bathrooms:params[:bathrooms],
